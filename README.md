@@ -1,3 +1,14 @@
+# Justificaciones 
+
+Se plantea una solucion basada en orquestacion de servicios debido a que esto permite mantener una independencia de las nuevas alianzas que se agreguen al banco como nuevo objeto de negocio.
+
+
+Lo anterior se apoya en capas de servicio que por una parte nos permiten separar los servicios internos que generan proxy con los servicios externos que forman parte de la alianza con el banco
+
+
+
+
+
 # Registro
 
 El sistema de registro es el primero que será desplegado ya que se encargara de registra la 
