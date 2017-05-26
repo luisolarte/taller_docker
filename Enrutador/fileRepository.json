@@ -1,0 +1,4 @@
+{
+    "agua": {"url": "http://taller_externalsoap_1:8080/w1-soap-svr/PagosServiceService?wsdl", "tipo": "SOAP" },
+    "luz": {"url": "http://taller_externalrest_1:8080", "tipo": "REST" }
+}

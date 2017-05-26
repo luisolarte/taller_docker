@@ -1,0 +1,1 @@
+Web service que garantiza el ingreso de un usuario a la plataforma de pago de servicios

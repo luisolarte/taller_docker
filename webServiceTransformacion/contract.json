@@ -1,0 +1,48 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "restorna los parametros para consultar los servicios externos",
+    "version" : "1.0.0",
+    "title" : "getTransformacion",
+    "contact" : { }
+  },
+  "host" : "localhost",
+  "basePath" : "/webServiceTranformador",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/getTransformacion/{metodo}/{servicio}/{factura}/{valor}" : {
+      "get" : {
+        "summary" : "getTransformacion",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "metodo",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      }, {
+        "name" : "servicio",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      }, {
+        "name" : "factura",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      }, {
+        "name" : "valor",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+   "autenticacion": {"plantilla":"http://taller_login_1:80/webServiceLogin/login/{}/{}", "url": "http://localhost:8083/webServiceLogin/login/{}/{}", "body": {}, "method": "GET" },
+   "validacion": {"plantilla": "http://taller_validador_1:8086/validacion/{}", "url": "http://localhost:8086/validacion/{}",  "body": {}, "method": "GET" },
+   "router": {"plantilla":"http://taller_router_1:8087/Enrutar/{}", "url": "http://localhost:8087/Enrutar/{}", "body": {}, "method": "GET" },
+   "transformador":{"plantilla": "http://taller_transformador_1:80/webServiceTransformacion/getTransformacion/{}/{}/{}/{}" ,"url": "http://localhost:8082/webServiceTransformacion/getTransformacion/{}/{}/{}/{}", "body": {},  "method": "GET"},
+   "dispatcher": {"url": "http://taller_dispatcher_1:8081/api/aes/mva/taller/dispatcher", 
+                  "body": {
+                            "typeService": "SOAP",
+                            "soapService": {
+                                    "wsdl": "http://localhost:8080/w1-soap-svr/PagosService?wsdl",
+                                    "functionToCall": "Cosultar",
+                                    "args": {"referenciaFactura": 123, "totalPagar": 20000}
+                            },
+                            "restService":{
+                                "method": "GET",
+                                "urlBase": "http://localhost:8080/servicios/pagos/v1/payments/123",
+                                "urlParts": [],
+                                "postBodyArgs": {}
+                            }
+                    }, "method": "GET"
+                 }
+}

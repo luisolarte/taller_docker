@@ -1,0 +1,19 @@
+{
+  "name": "Dispatcher_nodejs",
+  "version": "1.0.0",
+  "description": "Dispatcher Node.js usando Docker",
+  "author": "Luis Olarte",
+  "main": "startup.js",
+  "scripts": {
+    "start": "node startup.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.13.3",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "request": "^2.81.0",
+    "soap": "^0.19.0",
+    "xml": "1.0.1"
+  }
+}

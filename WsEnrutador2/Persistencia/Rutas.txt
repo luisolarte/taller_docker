@@ -1,0 +1,5 @@
+﻿luz|http://externalrest:9090/servicios/pagos/v1/payments/|rest
+gas|http://externalrest:9090/servicios/pagos/v1/payments/|rest
+telefono|http://externalrest:9090/servicios/pagos/v1/payments/|rest
+agua|http://externalsoap:7070/w1-soap-svr/PagosServiceService?wsdl|soap
+celular|http://externalrest:9090/servicios/pagos/v1/payments/|rest

@@ -1,0 +1,54 @@
+--- 
+networks: 
+  bank-net: 
+    driver: bridge
+services: 
+  dispatcher: 
+    build: Dispatcher/.
+    networks: 
+      - bank-net
+    ports: 
+      - "8081:8081"
+  externalrest: 
+    build: W1-REST-Service/.
+    networks: 
+      - bank-net
+    ports: 
+      - "9090:8080"
+  externalsoap: 
+    build: W1-SOAP-Service/.
+    networks: 
+      - bank-net
+    ports: 
+      - "7070:8080"
+  login: 
+    build: webServiceLogin/.
+    networks: 
+      - bank-net
+    ports: 
+      - "8083:80"
+  transformador: 
+    build: webServiceTransformacion/.
+    networks: 
+      - bank-net
+    ports: 
+      - "8082:80"
+  validador:
+    build: Validador2/.
+    networks:
+      - "bank-net"
+    ports:
+      - "8086:8086"
+  router:
+    build: Enrutador/.
+    networks:
+      - "bank-net"
+    ports:
+      - "8087:8087"
+  orquestador:
+    build: Orquestador/.
+    networks:
+      - "bank-net"
+    ports:
+      - "8085:8085"
+version: "3"

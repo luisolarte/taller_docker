@@ -1,0 +1,38 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Funcion login",
+    "version" : "1.0.0",
+    "title" : "login",
+    "contact" : { }
+  },
+  "host" : "localhost",
+  "basePath" : "/webServiceLogin",
+  "schemes" : [ "https" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/login/{user}/{pasword}" : {
+      "get" : {
+        "summary" : "login",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "user",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      }, {
+        "name" : "pasword",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ]
+    }
+  }
+}

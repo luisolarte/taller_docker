@@ -1,0 +1,16 @@
+{
+  "name": "validador",
+  "version": "1.0.0",
+  "description": "Docker de validacion",
+  "author": "Luis Olarte",
+  "main": "startup.js",
+  "scripts": {
+    "start": "node startup.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "xml": "1.0.1"
+  }
+}
